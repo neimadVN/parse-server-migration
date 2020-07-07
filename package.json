@@ -1,0 +1,28 @@
+{
+  "name": "parse-server-migration",
+  "version": "1.1.0",
+  "description": "1 line of code to migrate parse-server from v.2.x to v3.0 or above",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neimadVN/parse-server-migration.git"
+  },
+  "keywords": [
+    "parse",
+    "parse-server",
+    "parse-sdk",
+    "parse.com"
+  ],
+  "author": "hoanglam41@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neimadVN/parse-server-migration/issues"
+  },
+  "homepage": "https://github.com/neimadVN/parse-server-migration#readme"
+}
