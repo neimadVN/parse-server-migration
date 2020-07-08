@@ -9,12 +9,24 @@ This package would override these deprecated/removed interfaces so old codes wou
  * Parse.Cloud(request, response) => Parse.Cloud(request)
 
 # Usage
-install the package
+First, be free to upgrade your `parse-server` from v.2.x to latest
+<pre><code>npm i parse-server@latest
+npm i parse@latest</code></pre>
+
+install `parse-server-migration` package
 
 <pre><code>npm i parse-server-migration</code></pre>
 
 import the package anywhere is your code but make sure that you do it after init Parse server and before defining Cloud code
 
-<pre><code>require('parse-server-migration')</code></pre>
+<pre><code>require('parse-server-migration');</code></pre>
 
 I recommend that this package just help you deal with old legacy codes, for new code, please follow latest Parse.com guideline.
+
+# Some unsupported functions
+ * `Parse.Promise.is`
+ * `Parse.Promise.alway`
+
+if these codes aboves appear in your source code, please update it, because the is no similar thing like this in current native Promise of JS.
+
+Also, beware of `Parse.Promise.when`, because with this package, `.when` is an alias of `.all`, so in `.catch`, error is now an `Object.Error` instead of `Array<Object.Error>`
