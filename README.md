@@ -7,6 +7,7 @@ In 3.0.0, Parse.Promise is deprecated/removed, those code using Parse.Promise wo
 This package would override these deprecated/removed interfaces so old codes would work again
  * Parse.Promise => Promise
  * Parse.Cloud(request, response) => Parse.Cloud(request)
+ * Backbone style callback of { success, error } **(new)**
 
 # Usage
 First, be free to upgrade your `parse-server` from v.2.x to latest
