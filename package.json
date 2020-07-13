@@ -1,6 +1,6 @@
 {
   "name": "parse-server-migration",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "1 line of code to migrate parse-server from v.2.x to v3.0 or above",
   "main": "index.js",
   "directories": {
