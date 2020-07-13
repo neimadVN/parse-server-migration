@@ -30,4 +30,4 @@ I recommend that this package just help you deal with old legacy codes, for new 
 
 if these codes aboves appear in your source code, please update it, because there is no similar thing like this in current native Promise of JS.
 
-Also, beware of `Parse.Promise.when`, because with this package, `.when` is an alias of `.all`, so in `.catch`, error is now an `Object.Error` instead of `Array<Object.Error>`
+Also, beware of `Parse.Promise.when`, because with this package, `.when` is an alias of `.all`, so in `.catch`, error is now an array content first `Object.Error` instead of array content all `Array<Object.Error>`
